@@ -1,0 +1,73 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffeb3b;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #f44336;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 3px solid #3f51b5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #e1bee7;
+}
+
+.controls {
+    margin: 20px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #388e3c;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #2e7d32;
+}
+
+.winning-message {
+    font-size: 2rem;
+    color: #ff5722;
+    display: none;
+    margin-top: 20px;
+}
